@@ -46,20 +46,22 @@ public class Kalkulasi {
     
     public static void main(String[] args) {
         Kalkulasi panggil = new Kalkulasi();
-        Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);        
         do {
             System.out.print("Masukkan panjang data: ");
             int masukAngka = s.nextInt();
             if (masukAngka >= 11) 
             {
                 System.err.println("Angka maksimal adalah 10");
-            } else 
-            {
-                System.out.println(panggil.randomAngka(masukAngka));   
+                
+            } else {
+                System.out.println(Kalkulasi.randomAngka(masukAngka));
+                break;
             }
         } while (true);
-        
-        System.out.print("Masukkan sejumlah uang: ");
-        panggil.hitungPecahan(s.nextInt());
+//        untuk menjalankan metode uang pecahan
+       System.out.print("Masukkan sejumlah uang: ");
+        Kalkulasi.hitungPecahan(s.nextInt());    
     }
 }
+
