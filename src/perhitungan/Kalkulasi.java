@@ -58,8 +58,7 @@ public class Kalkulasi {
                 System.out.println(panggil.randomAngka(masukAngka));   
             }
         } while (true);
-    
-        Scanner s = new Scanner(System.in);  
+        
         System.out.print("Masukkan sejumlah uang: ");
         panggil.hitungPecahan(s.nextInt());
     }
